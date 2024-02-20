@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mPay App</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="image/Favicon Icon/payzilla-favicon.png" type="image/x-icon">
+    <!-- Favicon Icon End -->
+
+    <!-- Icon Link CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ICon Link CDN End -->
+
+    <!-- Flowbite CDN Link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
+    <!-- Flowbite CND Link End -->
+
+    <!-- Animation CSS CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Animation CSS CDN Link End -->
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/style.css">
+    <!-- CSS Link End -->
+
+</head>
+
+<body>
+
+    <!-- Loding  -->
+
+    <div class="loading fixed bg-bg-one top-0 left-0 h-lvh w-lvw">
+        <div class="rocket-img absolute bottom-0 left-2/4">
+            <img src="image/Png/rocket.svg" class="animate__animated animate__fadeInUp">
+        </div>
+        <div class="flash-img absolute left-2/4 bottom-40">
+            <img src="image/Png/flash.svg" class="animate__animated animate__slideInUp animate__fast animate__fadeOutUp">
+        </div>
+        <div class="logo-loading absolute left-2/4">
+            <img src="image/Logo/payzilla-loading.png" class="animate__animated animate__fadeIn animate__delay-1s">
+        </div>
+    </div>
+    <!-- Loading End -->
+
+
+    <!-- CashFlow Starting Menu Section -->
+
+    
+
+    <div id="controls-carousel" class="relative w-full h-lvh overflow-x-hidden " data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-lvh md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-600 ease-in-out" data-carousel-item>
+            <section class="payzilla-home-menu pt-0 pb-10 overflow-x-hidden bg-bg-two h-lvh w-full slide-1">
+                <div class="payzilla-bg w-100 overflow-hidden">
+                    <div class="chain relative">
+                        <span class="left-chain-2 absolute left-0"></span>
+                        <span class="right-chain-2 absolute right-0"></span>
+                    </div>
+                    <div class="box-2 -mt-32">
+                        <div class="payzilla-main-box-2 text-center bg-bg-one relative">
+                            <h3 class="text-txt-white font-semibold text-xl font-lato p-2">Add Your All Account And Manage</h3>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="image/Png/Visa_Card.png" alt="">
+                    </div>
+                </div>
+               
+                <div class="payzill-home-info p-10">
+                    <p class="text-center w-4/5 m-auto py-7 text-txt-white text-base font-lato">Manage Your Finance In The App Your Money Will Safe Here</p>
+
+                    <div class="button-gp text-center mt-4">
+                        <button class="w-full bg-txt-white p-2 rounded text-lg text-bg-two font-semibold">
+                            <a href="signin.html">Sign In</a></button>
+                        <button class="mt-3 text-txt-white text-lg font-semibold"><a href="signup.html">Sign Up</a></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <section class="payzilla-home-menu pt-0 pb-10 overflow-x-hidden overflow-y-auto bg-bg-two h-lvh w-full slide-1">
+                <div class="payzilla-bg w-100 overflow-hidden">
+                    <div class="chain relative  animate__animated animate__fadeInDown  animate__delay-2s">
+                        <span class="left-chain absolute left-0 "></span>
+                        <span class="right-chain absolute right-0"></span>
+                    </div>
+                    <div class="box-2 -mt-8 ">
+                        <div class="payzilla-main-box text-center bg-bg-one relative  animate__animated animate__fadeInDown animate__delay-2s animate__fast">
+                            <h2 class="text-txt-white font-semibold uppercase text-3xl font-lato">Manage</h2>
+                            <img src="image/Png/lines.svg" class="absolute -top-7 -left-9">
+                        </div>
+                        <div class="payzilla-main-box text-center bg-bg-one relative animate__animated animate__jackInTheBox animate__delay-2s">
+                            <h2 class="text-txt-black font-semibold uppercase text-3xl font-lato">Your</h2>
+                        </div>
+                        <div class="payzilla-main-box text-center bg-bg-one relative animate__animated animate__jackInTheBox animate__delay-3s animate__slower">
+                            <h2 class="text-txt-white font-semibold uppercase text-3xl font-lato">Finance</h2>
+                        </div>
+                        <div class="payzilla-main-box text-center bg-bg-one relative animate__animated animate__fadeInUp animate__delay-3s animate__slow">
+                            <h2 class="text-txt-black font-semibold uppercase text-3xl font-lato">Wisely</h2>
+                            <img src="image/Png/lines-fill.svg" class="absolute -top-7 -right-11">
+                        </div>
+                    </div>
+                </div>
+                <div class="payzill-home-info p-10">
+                    <p class="text-center w-4/5 m-auto py-7 text-txt-white text-base font-lato">The Best Payment Method Connects Your Money To Friends, Family, Brands, And Experiences.</p>
+                    <div class="flex items-center justify-between">
+                      <a href="signin.html" class="text-txt-white font-lato text-base">
+                        Skip
+                      </a>
+                      <div class="arror rounded-full text-center">
+                        <a href="#" class="text-bg-one bg-txt-white rounded-full" data-carousel-next>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>  
+                      </div>  
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</div>
+    <!-- CashFlow Starting Menu Section End--> 
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script src="Js/jquery.min.js"></script>
+<script src="Js/loader.js"></script>
+</html>

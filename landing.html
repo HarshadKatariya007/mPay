@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mPay App</title>
+
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" href="image/Favicon Icon/payzilla-favicon.png" type="image/x-icon">
+  <!-- Favicon Icon End -->
+
+  <!-- Icon Link CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ICon Link CDN End -->
+
+  <!-- Flowbite CDN Link -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <!-- Flowbite CND Link End -->
+
+  <!-- Animation CSS CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Animation CSS CDN Link End -->
+
+  <!-- Swipper JS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swipper JS CDN END -->
+
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="src/style.css">
+  <!-- CSS Link End -->
+
+</head>
+
+<body>
+
+
+  <!-- Header -->
+  <header class="pt-6">
+    <div class="custom">
+      <div class="header-logo flex justify-between items-center">
+        <a href="#" data-collapse-toggle="navbar-hamburger" type="button"
+          class="menu-box-icon inline-flex items-center justify-center p-2 w-10 h-10 text-xl text-gray-500 rounded-lg"
+          aria-controls="navbar-hamburger" aria-expanded="false" data-drawer-target="drawer-example"
+          data-drawer-show="drawer-example" aria-controls="drawer-example">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <img src="image/Logo/payzilla-logo.png" class="absolute w-24 h-7 left-1/2 ">
+        <a href="#"
+          class="menu-box-icon inline-flex items-center justify-center p-2 w-10 h-10 text-xl text-gray-500 rounded-lg ">
+          <i class="fa-regular fa-bell"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Side Bar -->
+
+  <div id="drawer-example"
+    class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-60 dark:bg-gray-800"
+    tabindex="-1" aria-labelledby="drawer-label">
+
+    <div class="sider-logo">
+      <img src="image/Logo/payzilla-logo.png" class="w-2/4 mt-5">
+    </div>
+    <div class="balance relative w-full">
+      <img src="image/Png/auth-bg.jpg" class="w-full h-16 mt-6 rounded-xl object-cover">
+      <h5 class="absolute text-sm top-3 left-3 text-txt-card-txt font-semibold">Balance</h5>
+      <h2 class="absolute text-xl bottom-1 left-3 text-txt-white font-semibold">$1,06,786.65</h2>
+    </div>
+    <div class="side-line w-full mt-4 bg-box-color"></div>
+
+    <div class="side-content relative">
+      <ul class="link-section">
+        <li class="block">
+          <a href="landing.html" class="flex items-center gap-3 text-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-credit-card sidebar-icon">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+              <line x1="1" y1="10" x2="23" y2="10"></line>
+            </svg>
+            <h3 class="text-base text-dark-txt">mPay</h3>
+          </a>
+        </li>
+        <li class="block">
+          <a href="landing.html" class="flex items-center gap-3 text-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-dollar-sign sidebar-icon">
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+            <h3 class="text-base text-dark-txt">Crypto</h3>
+          </a>
+        </li>
+        <li class="block">
+          <a href="landing.html" class="flex items-center gap-3 text-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-file-text sidebar-icon">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <h3 class="text-base text-dark-txt">Theme Pages</h3>
+          </a>
+        </li>
+        <li class="block">
+          <a href="landing.html" class="flex items-center gap-3 text-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-command sidebar-icon">
+              <path
+                d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
+              </path>
+            </svg>
+            <h3 class="text-base text-dark-txt">Theme Components</h3>
+          </a>
+        </li>
+        <li class="block">
+          <a href="landing.html" class="flex items-center gap-3 text-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-user sidebar-icon">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <h3 class="text-base text-dark-txt">Profile</h3>
+          </a>
+        </li>
+        <li class="block">
+          <a href="landing.html" class="flex items-center gap-3 text-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-log-out sidebar-icon">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+              <polyline points="16 17 21 12 16 7"></polyline>
+              <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+            <h3 class="text-base text-dark-txt">Log Out</h3>
+          </a>
+        </li>
+      </ul>
+      <div class="side-line-1 w-full mt-5"></div>
+      <div class="switch relative mt-5">
+        <ul class="pt-3">
+          <li class="flex items-center justify-between">
+            <h5 class="text-dark-txt">RTL</h5>
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer">
+              <div
+                class="relative w-10 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+              </div>
+            </label>
+          </li>
+
+          <li class="flex items-center justify-between">
+            <h5 class="text-dark-txt">Dark</h5>
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer">
+              <div
+                class="relative w-10 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+              </div>
+            </label>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side Bar End -->
+
+  <!-- Card Section -->
+
+  <section class="card-section pb-6 pt-6">
+    <div class="custom">
+      <div class="card-1 relative flex h-full overflow-hidden">
+        <div class="card-detail justify-between">
+          <div class="flex justify-between">
+            <h5 class="text-sm font-semibold text-txt-card-txt">Total Balance</h5>
+            <img src="image/Png/ellipse.svg" alt="">
+          </div>
+
+          <h1 class="mt-2 text-txt-white font-semibold text-2xl">$ 1,06,786,.65</h1>
+
+          <div class="amout-detail flex justify-between mt-8">
+
+            <div class="amout-detail-2 w-1/2 text-start">
+              <div class="flex items-center justify-start">
+                <img src="image/Png/arrow-down-right.svg">
+                <h5 class="text-txt-card-txt">Income</h5>
+              </div>
+              <h3 class="text-txt-white">$ 15,256.33</h3>
+
+            </div>
+            <div class="amout-detail-3 w-1/2 text-end border-0">
+              <div class="flex items-center justify-end">
+                <img src="image/Png/arrow-up-right.svg">
+                <h5 class="text-txt-card-txt">Expense</h5>
+              </div>
+              <h3 class="text-txt-white">$ 91,530.32</h3>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="add-money text-center p-4 text-bg-one">+ Total Money</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Card Section End -->
+
+
+  <!-- Categories Section -->
+
+  <section class="categories-se pt-4 pb-5">
+    <div class="custom">
+      <ul class="list-cate flex justify-between">
+        <li>
+          <a href="#" class="text-center">
+            <div class="list-box bg-txt-white flex rounded-xl items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-bg-one" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-repeat categories-icon">
+                <polyline points="17 1 21 5 17 9"></polyline>
+                <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                <polyline points="7 23 3 19 7 15"></polyline>
+                <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+              </svg>
+            </div>
+            <h5 class="text-center mt-2 text-sm">Transfer</h5>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-center">
+            <div class="list-box bg-txt-white flex rounded-xl items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-bg-one" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-file-text categories-icon">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h5 class="text-center mt-2 text-sm">Bill</h5>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-center">
+            <div class="list-box bg-txt-white flex rounded-xl items-center justify-center">
+              <i class="fa-solid fa-download text-2xl"></i>
+            </div>
+            <h5 class="text-center mt-2 text-sm">Request</h5>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-center">
+            <div class="list-box bg-txt-white flex rounded-xl items-center justify-center">
+              <i class="fa-solid fa-building-columns text-2xl"></i>
+            </div>
+            <h5 class="text-center mt-2 text-sm">Withdraw</h5>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Categories Section End -->
+
+  <!-- Service Section -->
+
+  <section class="service">
+    <div class="custom-e px-3">
+      <div class="title flex justify-between">
+        <h1 class="text-xl font-semibold">Select Service</h1>
+        <a href="#" class="text-bg-one">See all</a>
+      </div>
+      <div class="services flex flex-wrap">
+        <div class="w-1/4 mt-5">
+          <a href="#">
+            <div class="service-box flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-activity service-icon">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h5 class="mt-2 text-center text-dark-txt">Electricity</h5>
+          </a>
+        </div>
+        <div class="w-1/4 mt-5">
+          <a href="#">
+            <div class="service-box flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-droplet service-icon">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <h5 class="mt-2 text-center text-dark-txt">Water</h5>
+          </a>
+        </div>
+        <div class="w-1/4 mt-5">
+          <a href="#">
+            <div class="service-box flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-wifi service-icon">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+              </svg>
+            </div>
+            <h5 class="mt-2 text-center text-dark-txt">Internet</h5>
+          </a>
+        </div>
+        <div class="w-1/4 mt-5">
+          <a href="#">
+            <div class="service-box flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-monitor service-icon">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h5 class="mt-2 text-center text-dark-txt">Television</h5>
+          </a>
+        </div>
+        <div class="w-1/4 mt-5">
+          <a href="#">
+            <div class="service-box flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-bar-chart-2 service-icon">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h5 class="mt-2 text-center text-dark-txt">Investment</h5>
+          </a>
+        </div>
+        <div class="w-1/4 mt-5">
+          <a href="#">
+            <div class="service-box flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-tablet service-icon">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h5 class="mt-2 text-center text-dark-txt">Mobile</h5>
+          </a>
+        </div>
+        <div class="w-1/4 mt-5">
+          <a href="#">
+            <div class="service-box flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-plus-square service-icon">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <h5 class="mt-2 text-center text-dark-txt">Medical</h5>
+          </a>
+        </div>
+        <div class="w-1/4 mt-5">
+          <a href="#">
+            <div class="service-box flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-more-horizontal service-icon">
+                <circle cx="12" cy="12" r="1"></circle>
+                <circle cx="19" cy="12" r="1"></circle>
+                <circle cx="5" cy="12" r="1"></circle>
+              </svg>
+            </div>
+            <h5 class="mt-2 text-center text-dark-txt">Other</h5>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Service Section -->
+
+  <!-- Quick Section -->
+
+  <section class="quik-send">
+    <div class="custom">
+      <div class="title flex justify-between mt-5">
+        <h1 class="text-xl font-semibold">Quick Send To</h1>
+        <a href="#" class="text-bg-one">See all</a>
+      </div>
+      <div class="quick-send flex mt-4 gap-4">
+        <div class="pro gap-4">
+          <a href="#" class="pro-a flex items-center justify-center">
+            <div class="new-pro flex items-center justify-center ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus
+                    text-bg-one icon">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="pro">
+          <a href="#" class="block w-w-custom h-h-custom">
+            <img src="image/Person/p1.png" class="object-cover  w-w-custom h-h-custom">
+          </a>
+          <h5 class="text-center">Mike</h5>
+        </div>
+        <div class="pro">
+          <a href="#" class="block w-w-custom h-h-custom">
+            <img src="image/Person/p2.png" class="object-cover  w-w-custom h-h-custom">
+          </a>
+          <h5 class="text-center">Michael</h5>
+        </div>
+        <div class="pro">
+          <a href="#" class="block w-w-custom h-h-custom">
+            <img src="image/Person/p3.png" class="object-cover  w-w-custom h-h-custom">
+          </a>
+          <h5 class="text-center">Kristin</h5>
+        </div>
+        <div class="pro">
+          <a href="#" class="block w-w-custom h-h-custom">
+            <img src="image/Person/p4.png" class="object-cover  w-w-custom h-h-custom">
+          </a>
+          <h5 class="text-center">Trunk</h5>
+        </div>
+        <div class="pro">
+          <a href="#" class="block w-w-custom h-h-custom">
+            <img src="image/Person/p5.png" class="object-cover  w-w-custom h-h-custom">
+          </a>
+          <h5 class="text-center">Johnny</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Section End -->
+
+  <!-- Transaction -->
+
+  <section class="transaction">
+    <div class="custom">
+      <div class="title flex justify-between mt-5">
+        <h1 class="text-xl font-semibold">Transaction</h1>
+        <a href="#" class="text-bg-one">See all</a>
+      </div>
+      <div class="w-full mt-5">
+        <div class="transaction-box p-4">
+          <a href="#" class="flex items-center gap-3">
+            <div class="transaction-img flex items-center justify-center gap-4">
+              <img src="image/Png/1 (1).svg">
+            </div>
+            <div class="transaction-detil ">
+              <div class="transaction-name flex justify-between items-center w-full pb-1">
+                <h5>Amezon Prime</h5>
+                <h3 class="text-txt-red">$199.99</h3>
+              </div>
+              <div class="flex justify-between">
+                <h5 class="text-light-txt">Subscription</h5>
+                <h5 class="text-light-txt">8:45 am</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full mt-5">
+          <div class="transaction-box p-4">
+            <a href="#" class="flex items-center gap-3">
+              <div class="transaction-img flex items-center justify-center gap-4">
+                <img src="image/Png/2.svg">
+              </div>
+              <div class="transaction-detil ">
+                <div class="transaction-name flex justify-between items-center w-full pb-1">
+                  <h5>Apple Store</h5>
+                  <h3 class="text-green-txt">$60.30</h3>
+                </div>
+                <div class="flex justify-between">
+                  <h5 class="text-light-txt">Installment</h5>
+                  <h5 class="text-light-txt">9:00 pm</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="w-full mt-5">
+            <div class="transaction-box p-4">
+              <a href="#" class="flex items-center gap-3">
+                <div class="transaction-img flex items-center justify-center gap-4">
+                  <img src="image/Png/3 (1).svg">
+                </div>
+                <div class="transaction-detil ">
+                  <div class="transaction-name flex justify-between items-center w-full pb-1">
+                    <h5>Grocery Shop</h5>
+                    <h3 class="text-txt-red">$55.20</h3>
+                  </div>
+                  <div class="flex justify-between">
+                    <h5 class="text-light-txt">Purchase</h5>
+                    <h5 class="text-light-txt">20 May</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="w-full mt-5">
+              <div class="transaction-box p-4">
+                <a href="#" class="flex items-center gap-3">
+                  <div class="transaction-img flex items-center justify-center gap-4">
+                    <img src="image/Png/4.svg">
+                  </div>
+                  <div class="transaction-detil ">
+                    <div class="transaction-name flex justify-between items-center w-full pb-1">
+                      <h5>Snapchat Sub</h5>
+                      <h3 class="text-green-txt">$18.10</h3>
+                    </div>
+                    <div class="flex justify-between">
+                      <h5 class="text-light-txt">Bil Pay</h5>
+                      <h5 class="text-light-txt">19 May</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="w-full mt-5">
+                <div class="transaction-box p-4">
+                  <a href="#" class="flex items-center gap-3">
+                    <div class="transaction-img flex items-center justify-center gap-4">
+                      <img src="image/Png/5.svg">
+                    </div>
+                    <div class="transaction-detil ">
+                      <div class="transaction-name flex justify-between items-center w-full pb-1">
+                        <h5>Spotify Music</h5>
+                        <h3 class="text-green-txt">$20.50</h3>
+                      </div>
+                      <div class="flex justify-between">
+                        <h5 class="text-light-txt">Transfer</h5>
+                        <h5 class="text-light-txt">18 May</h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+  </section>
+  <!-- Transaction End -->
+
+  <!-- All Cards -->
+
+  <section class="cards">
+    <div class="custom relative">
+      <div class="title flex justify-between mt-5">
+        <h1 class="text-xl font-semibold">All Card</h1>
+        <a href="#" class="text-bg-one">See all</a>
+      </div>
+      <div class="swiper-container w-11/12 ml-auto mr-auto mt-5 overflow-hidden relative">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="card-img bg-no-repeat bg-cover p-4 rounded-xl w-full">
+              <div class="logo-card mt-3 flex justify-between">
+                <img src="image/Card/logo1.svg">
+                <img src="image/Card/card-chip.svg">
+              </div>
+              <h6 class="text-txt-white mt-3">**** **** ****2563</h6>
+              <h5 class="text-txt-white mt-2">Survana Williams</h5>
+              <h2 class="text-txt-white mt-2 text-2xl">$25,000.89</h2>
+              <div class="card-ex flex justify-between items-center mt-3">
+                <h6 class="text-txt-white">Exp.date</h6>
+                <h6 class="text-txt-white">Cvv</h6>
+              </div>
+              <div class="card-date flex justify-between items-center">
+                <h6 class="text-txt-white">12/24</h6>
+                <h6 class="text-txt-white">***</h6>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-img-2 bg-no-repeat bg-cover p-4 rounded-xl w-full">
+              <div class="logo-card mt-3 flex justify-between">
+                <img src="image/Card/logo1.svg">
+                <img src="image/Card/card-chip.svg">
+              </div>
+              <h6 class="text-txt-white mt-3">**** **** ****2563</h6>
+              <h5 class="text-txt-white mt-2">Survana Williams</h5>
+              <h2 class="text-txt-white mt-2 text-2xl">$25,000.89</h2>
+              <div class="card-ex flex justify-between items-center mt-3">
+                <h6 class="text-txt-white">Exp.date</h6>
+                <h6 class="text-txt-white">Cvv</h6>
+              </div>
+              <div class="card-date flex justify-between items-center">
+                <h6 class="text-txt-white">12/24</h6>
+                <h6 class="text-txt-white">***</h6>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-img-3 bg-no-repeat bg-cover p-4 rounded-xl w-full">
+              <div class="logo-card mt-3 flex justify-between">
+                <img src="image/Card/logo1.svg">
+                <img src="image/Card/card-chip.svg">
+              </div>
+              <h6 class="text-txt-white mt-3">**** **** ****2563</h6>
+              <h5 class="text-txt-white mt-2">Survana Williams</h5>
+              <h2 class="text-txt-white mt-2 text-2xl">$25,000.89</h2>
+              <div class="card-ex flex justify-between items-center mt-3">
+                <h6 class="text-txt-white">Exp.date</h6>
+                <h6 class="text-txt-white">Cvv</h6>
+              </div>
+              <div class="card-date flex justify-between items-center">
+                <h6 class="text-txt-white">12/24</h6>
+                <h6 class="text-txt-white">***</h6>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-img-4 bg-no-repeat bg-cover p-4 rounded-xl w-full">
+              <div class="logo-card mt-3 flex justify-between">
+                <img src="image/Card/logo1.svg">
+                <img src="image/Card/card-chip.svg">
+              </div>
+              <h6 class="text-txt-white mt-3">**** **** ****2563</h6>
+              <h5 class="text-txt-white mt-2">Survana Williams</h5>
+              <h2 class="text-txt-white mt-2 text-2xl">$25,000.89</h2>
+              <div class="card-ex flex justify-between items-center mt-3">
+                <h6 class="text-txt-white">Exp.date</h6>
+                <h6 class="text-txt-white">Cvv</h6>
+              </div>
+              <div class="card-date flex justify-between items-center">
+                <h6 class="text-txt-white">12/24</h6>
+                <h6 class="text-txt-white">***</h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- All Cards End -->
+
+  <!-- Bill Detail -->
+
+  <section class="bill">
+    <div class="custom">
+      <div class="title flex justify-between mt-7">
+        <h1 class="text-xl font-semibold">Bill Detail</h1>
+        <a href="#" class="text-bg-one">See all</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+        <div class="w-full mt-3">
+          <div class="bill-box p-4">
+            <a href="#" class="flex items-center gap-3">
+              <div class="bill-img flex items-center justify-center gap-2">
+                <img src="image/Png/airtel-icon.svg">
+              </div>
+              <div class="bill-detail">
+                <div class="bill-name flex justify-between items-center w-full pb-1">
+                  <h5>Airtel</h5>
+                </div>
+                <div class="flex justify-between">
+                  <h6 class="text-light-txt">Pre-Paid</h6>
+                </div>
+              </div>
+            </a>
+            <div class="bill-pay flex justify-between items-center mt-2">
+              <h5>$69.49</h5>
+              <a href="#" class="bg-bg-one px-3 text-txt-white rounded-md">Pay</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full mt-3">
+          <div class="bill-box p-4">
+            <a href="#" class="flex items-center gap-3">
+              <div class="bill-img flex items-center justify-center gap-4">
+                <img src="image/Png/apple-logo.svg">
+              </div>
+              <div class="bill-detail">
+                <div class="bill-name flex justify-between items-center w-full pb-1">
+                  <h5>Apple</h5>
+                </div>
+                <div class="flex justify-between">
+                  <h6 class="text-light-txt">Subscription</h6>
+                </div>
+              </div>
+            </a>
+            <div class="bill-pay flex justify-between items-center mt-2">
+              <h5>$49.85</h5>
+              <a href="#" class="bg-bg-one px-3 text-txt-white rounded-md">Pay</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full mt-3">
+          <div class="bill-box p-4">
+            <a href="#" class="flex items-center gap-3">
+              <div class="bill-img flex items-center justify-center gap-4">
+                <img src="image/Png/tele-icon.svg">
+              </div>
+              <div class="bill-detail">
+                <div class="bill-name flex justify-between items-center w-full pb-1">
+                  <h5>TV</h5>
+                </div>
+                <div class="flex justify-between">
+                  <h6 class="text-light-txt">Connection</h6>
+                </div>
+              </div>
+            </a>
+            <div class="bill-pay flex justify-between items-center mt-2">
+              <h5>$99.99</h5>
+              <a href="#" class="bg-bg-one px-3 text-txt-white rounded-md">Pay</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full mt-3">
+          <div class="bill-box p-4">
+            <a href="#" class="flex items-center gap-3">
+              <div class="bill-img flex items-center justify-center gap-4">
+                <img src="image/Png/airtel-icon.svg">
+              </div>
+              <div class="bill-detail">
+                <div class="bill-name flex justify-between items-center w-full pb-1">
+                  <h5>Torrent</h5>
+                </div>
+                <div class="flex justify-between">
+                  <h6 class="text-light-txt">Electricity</h6>
+                </div>
+              </div>
+            </a>
+            <div class="bill-pay flex justify-between items-center mt-2">
+              <h5>$60.49</h5>
+              <a href="#" class="bg-bg-one px-3 text-txt-white rounded-md">Pay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bill Detail End -->
+
+
+
+  <!-- Saving Plan -->
+
+  <section class="plan">
+    <div class="custom">
+      <div class="title flex justify-between mt-7">
+        <h1 class="text-xl font-semibold">My Saving Plan</h1>
+        <a href="#" class="text-bg-one">See all</a>
+      </div>
+      <div class="flex mt-3 gap-6">
+        <div class="new-car w-1/2 bg-input-box mt-3 rounded-xl p-4 relative">
+          <div class="new-car-icon h-10 w-10 bg-txt-white flex items-center ">
+            <img src="image/Png/10.svg" class="p-2">
+          </div>
+
+          <h3 class="font-normal mt-5">New Car</h3>
+          <div class="new-car-detail mt-2">
+            <h6 class="text-txt-g">Amount Left</h6>
+            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 mt-3">
+              <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
+              <h6 class="text-blue-600 mt-1">$2,000.00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="new-car w-1/2 bg-input-box mt-3 rounded-xl p-4 relative">
+          <div class="new-car-icon h-10 w-10 bg-txt-white flex items-center ">
+            <img src="image/Png/11.svg" class="p-2">
+          </div>
+
+          <h3 class="font-normal mt-5">New Car</h3>
+          <div class="new-home-detail mt-2">
+            <h6 class="text-txt-g">Amount Left</h6>
+            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 mt-3">
+              <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
+              <h6 class="text-blue-600 mt-1">$2,000.00</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Saving Plan End -->
+
+
+  <!-- Banner Static -->
+
+  <section class="mt-6">
+    <div class="custom">
+      <div class="banner-img bg-cover bg-no-repeat w-full p-4">
+        <div class="flex items-center gap-5">
+          <div class="banner-detail relative flex items-center justify-center w-12 h-11">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-txt-white" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-bar-chart-2 icon">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <div class="banner-content block w-full">
+            <h5 class="text-txt-white">Monthly Statistics</h5>
+            <h6 class="text-txt-white mt-1 text-sm">30% better performance than previous</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Static End -->
+
+
+  <!-- News Section -->
+
+  <section class="news">
+    <div class="custom">
+      <div class="title flex justify-between mt-7">
+        <h1 class="text-xl font-semibold">News Update</h1>
+        <a href="#" class="text-bg-one">See all</a>
+      </div>
+      <div class="w-full mt-5">
+        <div class="news-box p-4 ">
+          <div class="flex items-center gap-3">
+            <div class="news-img flex items-center justify-center gap-4 rounded-md overflow-hidden">
+              <img src="image/Png/1.jpg">
+            </div>
+            <div class="news-detil">
+              <a href="#" class="text-sm">
+                Save And Invest To Obtain More
+              </a>
+              <div class="news-line flex justify-between items-center">
+                <h6 class="text-txt-g text-sm">13 May,23</h6>
+                <h6 class="text-txt-g text-sm">-Smith</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mt-5">
+        <div class="news-box p-4 ">
+          <div class="flex items-center gap-3">
+            <div class="news-img flex items-center justify-center gap-4 rounded-md overflow-hidden">
+              <img src="image/Png/2.jpg">
+            </div>
+            <div class="news-detil">
+              <a href="#" class="text-sm">
+                How To Get More Money Your Business
+              </a>
+              <div class="news-line flex justify-between items-center">
+                <h6 class="text-txt-g text-sm">10 May,23</h6>
+                <h6 class="text-txt-g text-sm">-Laila</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mt-5">
+        <div class="news-box p-4 ">
+          <div class="flex items-center gap-3">
+            <div class="news-img flex items-center justify-center gap-4 rounded-md overflow-hidden">
+              <img src="image/Png/3.jpg">
+            </div>
+            <div class="news-detil">
+              <a href="#" class="text-sm">
+                5 Tip On Expand Your Business
+              </a>
+              <div class="news-line flex justify-between items-center">
+                <h6 class="text-txt-g text-sm">6 May,23</h6>
+                <h6 class="text-txt-g text-sm">-Brunt</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News End -->
+
+
+  <!-- Bottom Nav-Bar -->
+
+  <div class="nav-bar fixed w-full bottom-0 left-2/4 bg-txt-white">
+    <div class="scanner-img flex absolute items-center justify-center left-1/2">
+      <a href="#" class="flex items-center justify-center rounded-full ">
+        <img src="image/Png/scan.svg" alt="">
+      </a>
+    </div>
+    <ul class="flex items-center justify-between p-4 ">
+      <li class="w-1/5 relative text-center">
+        <a href="#">
+          <div class="icon flex justify-center ml-auto mr-auto text-xl text-bg-one">
+            <i class="fa-regular fa-credit-card"></i>
+          </div>
+          <h5 class="text-dark-txt">mPay</h5>
+        </a>
+      </li>
+      <li class="w-1/5 relative text-center">
+        <a href="#">
+          <div class="icon flex justify-center ml-auto mr-auto text-xl text-dark-txt">
+            <i class="fa-brands fa-bitcoin"></i>
+          </div>
+          <h5 class="text-dark-txt">Crypto</h5>
+        </a>
+      </li>
+      <li class="w-1/5 relative text-center">
+        <a href="#">
+          <div class="icon flex justify-center ml-auto mr-auto text-xl text-dark-txt">
+            <i class="fa-solid fa-chart-simple"></i>
+          </div>
+          <h5 class="text-dark-txt">Insight</h5>
+        </a>
+      </li>
+      <li class="w-1/5 relative text-center">
+        <a href="#">
+          <div class="icon flex justify-center ml-auto mr-auto text-xl text-dark-txt">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <h5 class="text-dark-txt">Profile</h5>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Bottom Nav-Bar End -->
+  <br><br><br><br><br>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="Js/swipper.js"></script>
+
+</html>

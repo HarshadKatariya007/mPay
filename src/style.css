@@ -1,0 +1,628 @@
+
+
+
+body
+{
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    font-family: 'Lato',sans-serif;
+}
+
+/* PayZilla Home Menu CSS */
+.custom
+{
+    padding: 0 20px;
+}
+.loading
+{
+    z-index:2;
+}
+.loading .rocket-img
+{
+   transform: translate(-50%);
+}
+.flash-img
+{
+    z-index: -1;
+    transform: translate(-50%);
+}
+.loading .rocket-img img,.flash-img img
+{
+    max-width: none;
+}
+ .logo-loading
+{
+    max-width:250px;
+    transform: translate(-50%); 
+    top:200px;
+}
+#controls-carousel
+{
+    z-index:0;
+}
+
+
+/* Pay Home CSS */
+
+.payzilla-home-menu .payzilla-bg
+{
+    padding-bottom:50px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.payzilla-home-menu .payzilla-bg::after
+{
+    content: "";
+    position: absolute;
+    background-color: #FFFFFF;
+    bottom: 0;
+    left: 50%;
+    height:280%;
+    width: calc(240vw + -80 * (100vw - 320px) / 1600);
+    z-index: -1;
+    border-radius:100%;
+    transform: translateX(-50%);
+}
+
+
+.payzilla-home-menu .chain
+{
+    margin: 0 auto;
+    height: 190px;
+    width: 130px;
+}
+
+.payzilla-bg .chain .left-chain
+{
+    border-left:1px dashed black;
+    height: 100%;
+    top:-5px;
+    transform: rotate(2deg);
+}
+
+.payzilla-bg .chain .right-chain
+{
+    border-left:1px dashed black;
+    height: 100%;
+    top:-5px;
+    transform: rotate(350deg);
+}
+
+.payzilla-bg .chain .left-chain::after
+{
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 10px;
+    width:10px;
+    top:1px;
+    left:-5px;
+    border-radius: 50%;
+}
+
+.payzilla-bg .chain .right-chain::after
+{
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 10px;
+    width:10px;
+    top:1px;
+    left:-5px;
+    border-radius: 50%;
+}
+
+.payzilla-bg .payzilla-main-box
+{
+    width: 200px;
+    height: 60px;
+    box-shadow: 5px 5px 0 black;
+    border: 1px solid white;
+    margin:20px auto;
+}
+
+.payzilla-main-box-2
+{
+    width: 245px;
+    height:70px;
+    box-shadow: 5px 5px 0 black;
+    border: 1px solid white;
+    margin:20px auto;
+}
+
+.payzilla-bg .payzilla-main-box h2
+{
+    padding:10px;
+}
+
+.payzilla-bg .payzilla-main-box:nth-child(2)
+{
+    background-color: #f3edffff;
+    box-shadow: 5px 5px 0 #b9adccff;
+    border: none;
+}
+
+.payzilla-bg .payzilla-main-box:nth-child(4)
+{
+    background-color: #f3edffff;
+    box-shadow: 5px 5px 0 #b9adccff;
+    border: none;
+}
+
+.payzilla-home-menu .payzill-home-info .arror
+{
+    border: 1px solid #ffffff;
+    height:53px;
+    width: 53px;
+    padding:3px 0;
+}
+.payzilla-home-menu .payzill-home-info .arror a 
+{   
+    display: inline;
+    height:45px;
+    width:45px;
+    line-height:45px;
+    font-size: 20px;
+    padding: 11px 14px;
+} 
+
+.payzilla-bg .chain .left-chain-2
+{
+    border-left:1px dashed black;
+    height: 50%;
+    top:-5px;
+    transform: rotate(2deg);
+}
+
+.payzilla-bg .chain .right-chain-2
+{
+    border-left:1px dashed black;
+    height:50%;
+    top:-5px;
+    transform: rotate(350deg);
+}
+
+.payzilla-bg .chain .left-chain-2::after
+{
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 10px;
+    width:10px;
+    top:1px;
+    left:-5px;
+    border-radius: 50%;
+}
+
+.payzilla-bg .chain .right-chain-2::after
+{
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 10px;
+    width:10px;
+    top:1px;
+    left:-5px;
+    border-radius: 50%;
+}
+
+.card-img
+{
+   max-width: 350px;
+   margin:50px auto;
+}
+
+
+
+
+/* Sigin Page CSS */
+
+.back-home
+{
+    background-image: url(../image/Png/auth-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.back-home a
+{
+    left: 20px;
+    font-size: 22px;
+    z-index: 1;
+    
+}
+.back-home img
+{
+    width:calc(115px + 10 * (100vw - 320px) / 447);
+    bottom: -20px;
+    z-index: 1;
+}
+.back-home .content
+{
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
+    padding: 0 20px 40px;
+}
+
+form
+{
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+}
+form .input-group input
+{
+    background-color: #f5f6f7ff;
+    padding:12px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+form .sign-in-btn
+{
+    background: linear-gradient(142.56deg, #913aff -1.68%, #622cfd 62.12%);
+    width: 100% !important;
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: calc(10px + 4 * (100vw - 320px) / 1600);
+}
+form .check-box .check label
+{
+    color: #958F9F;
+    border: none;
+}
+form h4
+{
+    color: #958F9F;
+}
+form h4 a
+{
+    color: #000000;
+}
+form .division
+{
+    margin: calc(20px + 20 * (100vw - 320px) / 447) 0;
+    z-index: 0;
+}
+form .division::after
+{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    background: linear-gradient(270deg, rgba(155, 166, 184, 0) -2.05%, rgb(155, 166, 184) 50.93%, rgba(155, 166, 184, 0) 101.74%);
+    z-index: -1;
+    height: 2px;
+}
+form .btn-sign
+{
+    padding: calc(10px + 4 * (100vw - 320px) / 1600);
+    border-radius: 6px;
+}
+
+
+
+
+/* Landing Page CSS */
+#drawer-example
+{
+    border-radius: 0 20px 0 0 ;
+}
+.header-logo img
+{
+    transform: translate(-50%);
+    line-height: 1;
+}
+
+.sider-logo
+{
+    display:inline-flex;
+    justify-content: center;
+}
+.side-line
+{   
+    height: 1px;
+    background-color: rgb( 159, 168, 190,0.1);
+    margin-bottom: 20px;
+}
+.side-line-1
+{   
+    border: 1px dashed #b8b8baff;
+    margin-bottom: 20px;
+}
+.side-content ul li
+{
+    padding: 15px;
+}
+header .header-logo .menu-box-icon
+{
+    border: 1px solid rgba(159, 168, 190, 0.2) ;
+    box-shadow: 0px 2px 12px rgba(23, 22, 27,0.06);
+}
+
+/* Card Section Css */
+.card-1
+{
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(1.5px);
+}
+.card-detail
+{
+    width: calc(100% - 50px);
+    background-image: url(../image/Png/home-card-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px 20px;
+    border-radius: 15px 0 0 15px;
+}
+.card-1 .add-money
+{
+    writing-mode: vertical-rl;
+    box-shadow: -6px 0px 20px rgba(37, 6, 125, 0.14);
+    border-radius: 0 6px 6px 0;
+    border: 1px dashed rgb( 159, 168, 190,0.7);
+}
+
+
+/* Categories Section CSS*/
+
+.categories-se
+{
+    background-color:rgb( 159, 168, 190,0.1);
+}
+.categories-se ul li a .list-box
+{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb( 159, 168, 190,0.15);
+}
+.categories-se ul li a .list-box i
+{
+    color:#7d26ffff;
+}
+
+/* Service Section CSS */
+
+.service
+{
+    padding-top: 25px;
+}
+.service .service-box
+{
+    width: 56px;
+    height: 56px;
+    background-color: rgb( 159, 168, 190,0.1);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service .service-box svg
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Service Section CSS End */
+
+/* Quick Send CSS */
+
+.quik-send .quick-send
+{
+    overflow: auto;
+}
+
+.quik-send .quick-send .pro a .new-pro
+{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(98, 44, 253,0.1);
+    border-radius: 10px;
+}
+.quik-send .quick-send .pro .pro-a
+{
+    border: 1px dashed rgba(98, 44, 253);
+    border-radius: 10px;
+    height: 65px;
+    width:65px;
+}
+.quik-send .quick-send .pro a img
+{
+    border-radius: 10px;
+}
+
+
+/* Transaction Section CSS */
+
+.transaction .transaction-box, .news-box
+{
+    border: 1px solid rgba(159, 168, 190, 0.15);
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 4px 22px rgba(23,22,27,0.04);
+    border-radius: 10px;
+}
+.transaction .transaction-box a .transaction-img
+{
+    border-radius: 6px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(159, 168, 190,0.1);
+}
+.transaction .transaction-box .transaction-detil, .bill-detail
+{
+    width: calc(100% - 50px - 16px);
+}
+/* Transaction Section CSS End */
+
+/* All Card CSS */
+
+.cards .card-img
+{
+    background-image: url(../image/Card/card1.jpg);
+    max-width: none;
+    margin: 0 auto;
+}
+.cards .card-img-2
+{
+    background-image: url(../image/Card/card2.jpg);
+    max-width: none;
+    margin: 0 auto;
+}
+.cards .card-img-3
+{
+    background-image: url(../image/Card/card3.jpg);
+    max-width: none;
+    margin: 0 auto;
+}
+.cards .card-img-4
+{
+    background-image: url(../image/Card/card4.jpg);
+    max-width: none;
+    margin: 0 auto;
+}
+.swiper-slide
+{
+    transition: 0.3s all;
+}
+.button-nex,.button-prev
+{
+    z-index: 1;
+}
+.button-nex button
+{
+    height:30px;
+    width: 30px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px 3px #cfcfcf;
+}
+.button-prev button
+{
+    height: 30px;
+    width: 30px;
+    transform: translateX(50%);
+    box-shadow: 0 0 5px 3px #cfcfcf;
+}
+/* All Card CSS End */
+
+/* Bill Detail CSS */
+
+.bill .bill-box
+{
+    border: 1px solid rgba(159, 168, 190, 0.15);
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 4px 22px rgba(23,22,27,0.04);
+    border-radius: 10px;
+}
+.bill .bill-box a .bill-img
+{
+    border-radius: 6px;
+    width:40px;
+    height:40px;
+    background-color: rgba(159, 168, 190,0.1);
+}
+/* Bill Detail CSS End */
+
+/* Plan CSS */
+
+.plan .new-car::after
+{
+    content: "";
+    position: absolute;
+    background-image: url(../image/Png/saving-plan-bg.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    top: 0;
+    right: 0;
+    background-size: contain;
+    z-index:-1;
+    mix-blend-mode: luminosity;
+}
+
+.plan .new-car
+{
+    z-index: 1;
+}
+/* Plan CSS End */
+
+
+/* Banner CSS */
+
+.banner-img
+{
+    background-image: url(../image/Png/statistics-bg.jpg);
+    border-radius: 10px;
+}
+.banner-detail::after
+{
+    content: "";
+    position: absolute;
+    height: 48px;
+    width: 46px;
+    border:5px solid rgba(255,255,255);
+    border-radius: 100%;
+    border-left-color:transparent;
+}
+/* Banner CSS End */
+
+
+/* News CSS  */
+
+.news-box .news-img
+{
+    width: calc(119px + 10 * (100vw - 320px) / 280);
+}
+.news-box .news-detil
+{
+    width: calc(100% - 129px);
+}
+.news-box .news-line
+{
+    border-top: 1px dashed rgba(155, 166, 184, 0.5);
+    padding-top: 8px;
+    margin-top: 10px;
+}
+/* News CSS End */
+
+
+/* Nav-Bar Section CSS */
+
+.nav-bar
+{
+    transform: translate(-50%);
+    z-index: 2;
+    box-shadow: -10px 1px 40px rgba(23, 22, 27,0.12);
+}
+.nav-bar .scanner-img
+{
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%);
+    bottom: 50%;
+}
+.nav-bar .scanner-img a
+{
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background: linear-gradient(142.56deg, #913aff -1.68%, #622cfd 62.12%);;
+}
+
+.nav-bar ul li:nth-child(1) a::after
+{
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    width: 30px;
+    height: 4px;
+    background: rgb(98, 44, 253);
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+/* Nav-Bar Section CSS End */
